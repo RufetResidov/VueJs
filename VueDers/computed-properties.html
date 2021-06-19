@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <style>
+      
+        .box {
+            width: 200px;
+            height: 200px;
+            border:1px solid black;
+            background-color: #fbdd08;
+        }
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="box" :class="className"></div>
+        <div class="box" :class="{'blue': !showBlue }"></div>
+        <button  class="btn btn-danger mx-5" @click="showBlue=!showBlue">Elave et / Sil</button>
+    </div>
+
+</body>
+<script src="javascript/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="javascript/example.js"></script>
+
+</html>
